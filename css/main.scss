@@ -31,13 +31,20 @@ body {
 
   /* Заголовок */
 
+  .navbar-light .navbar-toggler {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
   .btn-primary {
     outline: none;
   }
 
   .menu-title {
     text-align: center;
-    padding-left: 10rem;
+    padding-bottom: 1rem;
+    // padding-left: 10rem;
   }
 
   .title {
@@ -56,35 +63,32 @@ body {
       text-transform: uppercase;
       font-weight: 800;
     }
-  &::before,
-  &::after {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    width: 30%;
-    height: 1rem;
-    position: relative;
-    background-color: $accent-color;
-    opacity: .5;
-  }
-  &::before {
-    margin-left: -100%;
-    left: 1.5rem;
-  }
-  &::after {
-    margin-right: -100%;
-    right: 1.5rem;
-  }
+  // &::before,
+  // &::after {
+  //   content: '';
+  //   display: inline-block;
+  //   vertical-align: middle;
+  //   width: 30%;
+  //   height: 1rem;
+  //   position: relative;
+  //   background-color: $accent-color;
+  //   opacity: .5;
+  // }
+  // &::before {
+  //   margin-left: -100%;
+  //   left: 1.5rem;
+  // }
+  // &::after {
+  //   margin-right: -100%;
+  //   right: 1.5rem;
+  // }
   }
 
-  @media (max-width: 768px) {
-    .title {
-      &::before, &::after {
-        content: '';
-        display: none;
-      }
-    }
-  }
+  // @media (max-width: 768px) {
+  //   .navbar-brand {
+  //     height: 30px;
+  //   }
+  // }
 
   .btn-primary {
     font-size: 1em;
@@ -113,6 +117,12 @@ body {
     }
   }
 
+  @media (max-width: 1190px) {
+    .navbar {
+      font-size: 12px;
+    }
+  }
+
 /* Преимущества */
 
   .advan {
@@ -121,12 +131,12 @@ body {
     color: $secondary-text-color;
     background: url(../img/main/bg.png) center center no-repeat;
     background-size: cover;
-    .col-md-4{
-      padding-top: 8rem;
-      margin-right: 4rem;
-      text-align: center;
-      align-items: center;
-    }
+    // .col-md-4{
+    //   padding-top: 8rem;
+    //   margin-right: 4rem;
+    //   text-align: center;
+    //   align-items: center;
+    // }
     p {
       font-size: 2.2em;
       padding-top: 2rem;
@@ -144,8 +154,18 @@ body {
   }
 
   @media (max-width: 480px) {
-    
+    .advan h1 {
+      font-size: 2.5em;
+    }
   }
+  
+  @media (max-width: 992px) {
+    .advan {
+      padding-top: 1rem;
+    }
+  }
+
+  
 
   /* Популярные марки */
 
@@ -170,13 +190,15 @@ body {
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     .card-deck {
       .card {
         margin-right: 0;
       }
     }
   }
+
+  
 
   /* Лучшие условия */
 
@@ -243,6 +265,7 @@ body {
     width: 500px;
     height: 400px;
   }
+
   @media (max-width: 480px) {
     .map {
       display: none;
@@ -264,7 +287,7 @@ body {
     .btn-footer {
       font-size: 1.5em;
     }
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
       .footer {
         .logo {
           margin: 1rem 1rem;
