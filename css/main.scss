@@ -27,8 +27,6 @@ body {
     text-decoration: none !important;
   }
 
-  
-
   /* Заголовок */
 
   .navbar-light .navbar-toggler {
@@ -63,32 +61,7 @@ body {
       text-transform: uppercase;
       font-weight: 800;
     }
-  // &::before,
-  // &::after {
-  //   content: '';
-  //   display: inline-block;
-  //   vertical-align: middle;
-  //   width: 30%;
-  //   height: 1rem;
-  //   position: relative;
-  //   background-color: $accent-color;
-  //   opacity: .5;
-  // }
-  // &::before {
-  //   margin-left: -100%;
-  //   left: 1.5rem;
-  // }
-  // &::after {
-  //   margin-right: -100%;
-  //   right: 1.5rem;
-  // }
   }
-
-  // @media (max-width: 768px) {
-  //   .navbar-brand {
-  //     height: 30px;
-  //   }
-  // }
 
   .btn-primary {
     font-size: 1em;
@@ -96,7 +69,7 @@ body {
     border-radius:10px;
   }
   .navbar {
-    font-size: 16px;
+    font-size: 1.6em;
     padding: 0.3rem 5rem;
     .navbar-nav{
       li.nav-item > a.nav-link {
@@ -131,12 +104,7 @@ body {
     color: $secondary-text-color;
     background: url(../img/main/bg.png) center center no-repeat;
     background-size: cover;
-    // .col-md-4{
-    //   padding-top: 8rem;
-    //   margin-right: 4rem;
-    //   text-align: center;
-    //   align-items: center;
-    // }
+    padding-top: 1rem;
     p {
       font-size: 2.2em;
       padding-top: 2rem;
@@ -148,20 +116,38 @@ body {
       font-weight: 900;
       font-size: 3em;
       margin-top: 5rem;
-      margin-bottom: 5rem;
+      margin-bottom: 4rem;
       letter-spacing: 2.49px;
+    }
+    .main-section {
+      margin-top: 5rem;
+    }
+    .order-call {
+      display: flex;
+      justify-content: center;
+      button {
+        margin-top: 5rem;
+        width: 200px;
+        font-size: 2em;
+      }
     }
   }
 
   @media (max-width: 480px) {
     .advan h1 {
-      font-size: 2.5em;
+      font-size: 2em;
     }
   }
   
   @media (max-width: 992px) {
     .advan {
       padding-top: 1rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .smart-logo {
+      display: none;
     }
   }
 
@@ -235,6 +221,10 @@ body {
   
   /* Instagram */
 
+  #carouselExampleFade {
+    width: 100%;
+  }
+
   
   /* Контакты */
 
@@ -275,7 +265,7 @@ body {
   /* footer */
 
   .container-fluid {
-    background-color: $divider-color;
+    background-color: $secondary-text-color;
     // margin-top: 5rem;
     .footer {
       margin-top: 5rem;
@@ -299,5 +289,24 @@ body {
     }
   }
 
+  /* Iphone */
 
+  #section-iphone {
+    .iphone-title {
+      color: $primary-text-color;
+      font-size: 5em;
+      font-weight: 600;
+      opacity: .9;
+      margin-bottom: 5rem;
+    }
+    .iphone-descr {
+      color: $primary-text-color;
+      font-size: 3em;
+      
+    }
+  }
 }
+
+
+
+  

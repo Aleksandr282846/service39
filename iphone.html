@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/hover-min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,800" rel="stylesheet">
+  <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+  <!-- Стили slick slider -->
+  <!-- <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">   -->
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU"></script>
+  <title>Mobile Service 39</title>
+</head>
+<body>
+
+   <!-- Меню -->
+  
+  <div class="container"> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/header/logo.png" height="40" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse menu-title" id="navbarSupportedContent" >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active hvr-underline-from-center">
+            <a class="nav-link text-uppercase" href="index.html">Главная<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item hvr-underline-from-center">
+              <a class="nav-link text-uppercase" href="Iphone.html">Ремонт IPhone<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item hvr-underline-from-center">
+              <a class="nav-link text-uppercase" href="#">Ремонт Samsung<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item hvr-underline-from-center">
+              <a class="nav-link text-uppercase" href="#">Ремонт Xiaomi<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item hvr-underline-from-center">
+              <a class="nav-link text-uppercase" href="#">Контакты<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <!-- <button type="button" class="btn-lg btn-primary">8 (4012) 900-997</button> -->
+        <a class="btn-lg btn-primary" href="tel:8 (4012) 900-997" role="button">8 (4012) 900-997</a>
+      </div>
+    </nav>
+  </div>
+
+  <div id="section-iphone">
+    <div class="container-fluid">
+      <div class="row justify-content-center iphone-title">
+        <div class="col-md-8 text-center">
+          <span>
+            Ремонт iPhone в Калининграде
+          </span>
+        </div>
+      </div>
+      <div class="row justify-content-center iphone-descr">
+        <div class="col-md-8 text-center">
+          <span>
+            Рассчитайте стоимость ремонта с точностью 95% в 3 клика
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <div class="row justify-content-center model">
+    <div class="col-md-2 text-center">
+      <div class="input-group mb-3">
+        <select class="custom-select" id="inputGroupSelect01">
+          <option selected>Choose...</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Подвал -->
+
+  <div class="container-fluid footer">
+    <div class="footer">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-4 text-center">
+          <div class="logo">
+            <a href="#"><img src="img/header/logo.png" height="40" alt="logo"></a>       
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="social">
+            <a href="#"><img src="img/footer/vk.png" alt=""></a>
+            <a href="#"><img src="img/footer/facebook.png" alt=""></a>
+            <a href="#"><img src="img/footer/instagram.png" alt=""></a>  
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <a class="btn btn-primary btn-footer" href="tel:8 (4012) 900-997" role="button">8 (4012) 900-997</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/popper.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!-- <script src="slick-1.8.1/slick/slick.min.js"></script> -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- <script>
+    $(".regular").slick({
+      dots: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 2
+    });
+  </script> -->
+
+  <script>
+    $('.dropdown').click(function(){
+      $('.dropdown-menu').toggleClass('show');
+    });
+  </script>
+
+  <script>
+    ymaps.ready(init);
+      var myMap,
+        myPlacemark1;
+
+      function init(){ 
+          myMap = new ymaps.Map("map", {
+              center: [54.719378, 20.514072],
+              zoom: 17
+          });
+
+          myMap.behaviors.disable([
+            // 'drag',
+            'scrollZoom'
+          ]);
+
+          myPin = new ymaps.GeoObjectCollection({}, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/header/logo.png',
+            iconImageSize: [60, 21],
+            iconImageOffset: [-27, -30]
+          });
+
+          myPlacemark1 = new ymaps.Placemark([54.719378, 20.514072], { 
+            hintContent: 'Mobile service', 
+            balloonContent: 'Ремонт мобильных телефонов'
+          });
+
+          myMap.geoObjects.add(myPin);
+          myPin.add(myPlacemark1);
+      }
+  </script>
+
+  
+</body>
+</html>

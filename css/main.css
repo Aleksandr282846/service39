@@ -22,6 +22,7 @@ body {
   /* Instagram */
   /* Контакты */
   /* footer */
+  /* Iphone */
 }
 
 body a {
@@ -70,7 +71,7 @@ body .btn-primary {
 }
 
 body .navbar {
-  font-size: 16px;
+  font-size: 1.6em;
   padding: 0.3rem 5rem;
 }
 
@@ -102,6 +103,7 @@ body .advan {
   color: #ffffff;
   background: url(../img/main/bg.png) center center no-repeat;
   background-size: cover;
+  padding-top: 1rem;
 }
 
 body .advan p {
@@ -117,19 +119,44 @@ body .advan h1 {
   font-weight: 900;
   font-size: 3em;
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   letter-spacing: 2.49px;
+}
+
+body .advan .main-section {
+  margin-top: 5rem;
+}
+
+body .advan .order-call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .advan .order-call button {
+  margin-top: 5rem;
+  width: 200px;
+  font-size: 2em;
 }
 
 @media (max-width: 480px) {
   body .advan h1 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 
 @media (max-width: 992px) {
   body .advan {
     padding-top: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  body .smart-logo {
+    display: none;
   }
 }
 
@@ -193,6 +220,10 @@ body .repair-text {
   line-height: 4rem;
 }
 
+body #carouselExampleFade {
+  width: 100%;
+}
+
 body .contacts .adress {
   font-size: 2em;
   font-weight: 400;
@@ -229,7 +260,7 @@ body .map {
 }
 
 body .container-fluid {
-  background-color: #f1f3f4;
+  background-color: #ffffff;
 }
 
 body .container-fluid .footer {
@@ -252,5 +283,18 @@ body .container-fluid .btn-footer {
   body .container-fluid .footer .social {
     margin-bottom: 1rem;
   }
+}
+
+body #section-iphone .iphone-title {
+  color: #212121;
+  font-size: 5em;
+  font-weight: 600;
+  opacity: .9;
+  margin-bottom: 5rem;
+}
+
+body #section-iphone .iphone-descr {
+  color: #212121;
+  font-size: 3em;
 }
 /*# sourceMappingURL=main.css.map */
