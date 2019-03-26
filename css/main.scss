@@ -2,7 +2,7 @@
 
 $primary-color-dark:   #388E3C;
 $primary-color:        #4CAF50;
-$primary-color-light:  rgb(112, 95, 212);
+$primary-color-light:  #002560;
 $primary-color-text:   #303F9F;
 $accent-color:         #448AFF;
 $primary-text-color:   #212121;
@@ -323,7 +323,7 @@ body {
     box-shadow: 0 0.5rem 2.5rem rgba(0,0,0,.5);
     -webkit-appearance: button;
     outline: none;
-    transition: 3s
+    transition: .25s
   
   //   position: relative;
   //   background: $accent-color;

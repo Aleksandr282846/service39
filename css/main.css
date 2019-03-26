@@ -316,12 +316,12 @@ body #form-iphone select {
           box-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.5);
   -webkit-appearance: button;
   outline: none;
-  -webkit-transition: 3s;
-  transition: 3s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 body #form-iphone select:hover {
-  background-color: #705fd4;
+  background-color: #002560;
   cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
