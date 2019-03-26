@@ -2,7 +2,7 @@
 
 $primary-color-dark:   #388E3C;
 $primary-color:        #4CAF50;
-$primary-color-light:  #C8E6C9;
+$primary-color-light:  rgb(112, 95, 212);
 $primary-color-text:   #303F9F;
 $accent-color:         #448AFF;
 $primary-text-color:   #212121;
@@ -309,19 +309,41 @@ body {
       margin-bottom: 6rem;   
     }
   }
+ 
   #form-iphone select {
-    position: relative;
+    // position: absolute;
     background: $accent-color;
     color: $secondary-text-color;
+    padding: 1rem;
     border-radius: 1rem;
-    width: 300px;
-    height: 4rem;
-    font-size: 1.5em;
-    font-weight: 600;
+    width: 350px;
+    height: 50px;
+    border: none;
+    font-size: 2em;
     box-shadow: 0 0.5rem 2.5rem rgba(0,0,0,.5);
+    -webkit-appearance: button;
     outline: none;
+    transition: 3s
+  
+  //   position: relative;
+  //   background: $accent-color;
+  //   color: $secondary-text-color;
+  //   border-radius: 1rem;
+  //   width: 300px;
+  //   height: 4rem;
+  //   font-size: 1.5em;
+  //   font-weight: 600;
+  //   box-shadow: 0 0.5rem 2.5rem rgba(0,0,0,.5);
+  //   outline: none;
+  //   cursor: pointer;
+  }
+
+  #form-iphone select:hover {
+    background-color: $primary-color-light;
     cursor: pointer;
   }
+  
+  
 }
 
 
